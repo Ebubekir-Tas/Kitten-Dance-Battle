@@ -4,37 +4,62 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+    <!--Bootstrap-->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
-    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <!--Fonts-->
+    <link href="https://fonts.googleapis.com/css2?family=Do+Hyeon&family=Pacifico&display=swap" rel="stylesheet">
     
+    <!--CSS-->
     <link rel="stylesheet" href="styles.css">
 
 </head>
+
+
 <body>
 
     <!--Title-->
-    <div>
+    <section class=title>
         <h1>Project Dance Battle</h1>
-    </div>
+    </section>
 
+
+    <!--Winner Anouncement (Filled in by JS)-->
+
+<section class="winner"></section>
     <div>
         <h2></h2>
     </div>
 
+    <!--Progress Bar-->
+<section class="row xp">
+
+        <div id="xpbar1" class="col-lg-6">Player 1 Score:</div>
+
+
+        <div id="xpbar2" class="col-lg-6">Player 2 Score:</div>
+
+
+</section>
+  
+
+
 
     <!--Stick Figure Images 1-->
-<div class="sticks">   
+<section class="row sticks">   
 
-            <img id="stick1" class="top col-sm-6" src="images/stick2.png" alt="Image1"></img>
-            <img id="stick2" class="top col-sm-6" src="images/stick1.png" alt="Image1"></img>  
+    <img id="stick1" class="top col-sm-6" src="images/stick2.png" alt="Image1"></img>
+    <img id="stick2" class="top col-sm-6" src="images/stick1.png" alt="Image1"></img>   
         
 
-    <!--Stick Figure Images 2-->
-        
-</div>
                
+
+    <!--Javascript and JQuery-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="index.js"></script>
+
 </body>
+
+
 </html>
