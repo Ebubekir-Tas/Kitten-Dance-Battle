@@ -4,8 +4,16 @@ h1{
     font-family: Pacifico;
     word-spacing: 30px;
     letter-spacing: 2px;
-    font-size: 9.5rem !important;
-    margin: 150px;
+    font-size: 8.5rem;
+    margin: 100px 100px 50px 100px;
+}
+
+h2{
+    text-align: center;
+    color: #fff;
+    font-family: Pacifico;
+    word-spacing: 30px;
+    letter-spacing: 2px;
 }
 
 body{
