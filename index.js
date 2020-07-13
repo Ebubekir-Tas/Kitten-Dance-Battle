@@ -39,6 +39,7 @@ document.addEventListener("keydown", function (e) {
   if (e.code == "KeyZ") {
     P1Score += Math.floor(Math.random() * 9) + 1; //Random number from 1-10
     console.log(P1Score)
+    $('#xpbar1').html('Player 1 Score: ' + P1Score)
   }
 });
 
@@ -46,6 +47,7 @@ document.addEventListener("keydown", function (e) {
   if (e.code == "KeyX") {
     P1Score += Math.floor(Math.random() * 9) + 1; //Random number from 1-10
     console.log(P1Score);
+    $('#xpbar1').html('Player 1 Score: ' + P1Score)
     if (P1Score >= 300){
         $('h2').text('Player 1 wins!')
         setTimeout(function(){
@@ -62,6 +64,7 @@ document.addEventListener("keydown", function (f) {
     if (f.code == "KeyN") {
       P2Score += Math.floor(Math.random() * 9) + 1; //Random number from 1-10
       console.log(P2Score)
+      $('#xpbar2').html('Player 2 Score: ' + P2Score)
     }
   });
   
@@ -69,8 +72,9 @@ document.addEventListener("keydown", function (f) {
     if (f.code == "KeyM") {
       P2Score += Math.floor(Math.random() * 9) + 1; //Random number from 1-10
       console.log(P2Score);
+      $('#xpbar2').html('Player 2 Score: ' + P2Score)
       if (P2Score >= 300){
-        $('h2').text('Player 2 wins!')
+        $('h2').css("color", "black").text('Player 2 wins!')
             setTimeout(function(){
           window.location.reload(true);}, 2000)
       }

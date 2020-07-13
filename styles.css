@@ -5,7 +5,6 @@ h1{
     word-spacing: 30px;
     letter-spacing: 2px;
     font-size: 8.5rem;
-    margin: 100px 100px 50px 100px;
 }
 
 h2{
@@ -21,19 +20,55 @@ body{
     padding: 8px auto;
 }
 
-.stick-container-top, .stick-container-bottom{
+.title{
+
+    padding: 5%;
+    position: relative;
+}
+
+
+.xp{
+    margin: 2% 0;
+    position: relative;
+}
+
+#xpbar1{
+    background-color: #FFF;
+    height: 20px;    
     text-align: center;
+    font-family: 'Do Hyeon';
+    letter-spacing: 0px;
+    color: #000
 }
 
-.stick-container-bottom {
-    background-color: yellow;
+#xpbar2{
+    background-color: #000;
+    height: 20px;
+    text-align: center;
+    font-family: 'Do Hyeon';
+    letter-spacing: 0px;
+    color: #fff;
+
+
 }
 
-#stick1, #stick, #stick3, #stick4{
+
+
+
+#stick1{
     float:left;
+    padding: 3% 5% 0px 0px;
+
+}
+
+#stick2{
+    padding: 3% 0px 0px 5%;
+
 }
 
 .sticks{
     width: 50%;
     margin: 0 auto 0 auto;
+    position: relative;
+
 }
