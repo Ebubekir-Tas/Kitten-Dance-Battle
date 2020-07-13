@@ -1,0 +1,31 @@
+h1{
+    text-align: center;
+    color: #fff;
+    font-family: Pacifico;
+    word-spacing: 30px;
+    letter-spacing: 2px;
+    font-size: 9.5rem !important;
+    margin: 150px;
+}
+
+body{
+    background-color: #00FF00;
+    padding: 8px auto;
+}
+
+.stick-container-top, .stick-container-bottom{
+    text-align: center;
+}
+
+.stick-container-bottom {
+    background-color: yellow;
+}
+
+#stick1, #stick, #stick3, #stick4{
+    float:left;
+}
+
+.sticks{
+    width: 50%;
+    margin: 0 auto 0 auto;
+}
