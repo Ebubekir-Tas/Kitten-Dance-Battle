@@ -1,3 +1,8 @@
+body{
+    background-color: #00FF00;
+    padding: 8px auto;
+}
+
 h1{
     text-align: center;
     color: #fff;
@@ -15,20 +20,31 @@ h2{
     letter-spacing: 2px;
 }
 
-body{
-    background-color: #00FF00;
-    padding: 8px auto;
+.sticks{
+    width: 50%;
+    margin: 0 auto 0 auto;
+    position: relative;
+
+}
+
+#stick1{
+    float:left;
+    padding: 3% 5% 0px 0px;
+
+}
+
+#stick2{
+    padding: 3% 0px 0px 5%;
+
 }
 
 .title{
-
     padding: 5%;
     position: relative;
 }
 
-
 .xp{
-    margin: 2% 0;
+    margin: 2% 2%;
     position: relative;
 }
 
@@ -48,27 +64,5 @@ body{
     font-family: 'Do Hyeon';
     letter-spacing: 0px;
     color: #fff;
-
-
 }
 
-
-
-
-#stick1{
-    float:left;
-    padding: 3% 5% 0px 0px;
-
-}
-
-#stick2{
-    padding: 3% 0px 0px 5%;
-
-}
-
-.sticks{
-    width: 50%;
-    margin: 0 auto 0 auto;
-    position: relative;
-
-}
