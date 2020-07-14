@@ -20,6 +20,26 @@ h2{
     letter-spacing: 2px;
 }
 
+h3{
+    color: #fff;
+    font-size: 1.5rem;
+    text-align: center;
+    margin: 2% 2%;
+    font-family: 'Do Hyeon';
+}
+
+h4{
+    color: #000;
+    font-size: 1.5rem;
+    text-align: center;
+    margin: 2% 2%;
+    font-family: 'Do Hyeon';
+}
+
+.instructions{
+    margin: 2% 2%;
+}
+
 .sticks{
     width: 50%;
     margin: 0 auto 0 auto;
@@ -39,7 +59,7 @@ h2{
 }
 
 .title{
-    padding: 5%;
+    padding: 3%;
     position: relative;
 }
 
