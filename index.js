@@ -11,7 +11,7 @@ document.addEventListener("keydown", function (e) {
     $("#stick1").attr("src", "images/stick2.png");
     P1Score += Math.floor(Math.random() * 9) + 1;         //Random number from 1-10
     console.log(P1Score)
-    $('#xpbar1').html('Player 1 Score: ' + P1Score)
+    $('#xpbar1').html('Player 1 Score: ' + P1Score  + '/300')
   }
 });
 
@@ -21,7 +21,7 @@ document.addEventListener("keydown", function (e) {
     $("#stick1").attr("src", "images/stick1.png");
     P1Score += Math.floor(Math.random() * 9) + 1;         //Random number from 1-10
     console.log(P1Score);
-    $('#xpbar1').html('Player 1 Score: ' + P1Score)
+    $('#xpbar1').html('Player 1 Score: ' + P1Score + '/300')
     if (P1Score >= 299 && $('h2').is(':empty')){          //Win at 300 or more points
       $('h2').css("color", "white").text('Player 1 wins!')
           setTimeout(function(){
@@ -37,7 +37,7 @@ document.addEventListener("keydown", function (f) {
     $("#stick2").attr("src", "images/stick1.png");
     P2Score += Math.floor(Math.random() * 9) + 1;          //Random number from 1-10
     console.log(P2Score)
-    $('#xpbar2').html('Player 2 Score: ' + P2Score)
+    $('#xpbar2').html('Player 2 Score: ' + P2Score + '/300')
   }
 });
 
@@ -47,7 +47,7 @@ document.addEventListener("keydown", function (f) {
     $("#stick2").attr("src", "images/stick2.png");
     P2Score += Math.floor(Math.random() * 9) + 1;          //Random number from 1-10
     console.log(P2Score);
-    $('#xpbar2').html('Player 2 Score: ' + P2Score)
+    $('#xpbar2').html('Player 2 Score: ' + P2Score + '/300')
     if (P2Score >= 299&& $('h2').is(':empty')){            //Win at 300 or more points
       $('h2').css("color", "black").text('Player 2 wins!')
           setTimeout(function(){
