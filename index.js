@@ -3,26 +3,26 @@
 //Animation Stick 1 - Pressing Z or X will switch frames of stick image
 document.addEventListener("keydown", function (e) {
   if (e.code == "KeyZ") {
-    $("#stick1").attr("src", "images/stick1.png");
+    $("#stick1").attr("src", "Images/stick1.png");
   }
 });
 
 document.addEventListener("keydown", function (e) {
   if (e.code == "KeyX") {
-    $("#stick1").attr("src", "images/stick2.png");
+    $("#stick1").attr("src", "Images/stick2.png");
   }
 });
 
 //Animation Stick 2 - Pressing Z or X will switch frames of stick image
 document.addEventListener("keydown", function (f) {
   if (f.code == "KeyN") {
-    $("#stick2").attr("src", "images/stick2.png");
+    $("#stick2").attr("src", "Images/stick2.png");
   }
 });
 
 document.addEventListener("keydown", function (f) {
   if (f.code == "KeyM") {
-    $("#stick2").attr("src", "images/stick1.png");
+    $("#stick2").attr("src", "Images/stick1.png");
   }
 });
 
