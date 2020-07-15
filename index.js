@@ -49,7 +49,7 @@ document.addEventListener("keydown", function (f) {
     console.log(P2Score);
     $('#xpbar2').html('Player 2 Score: ' + P2Score + '/300')
     if (P2Score >= 299&& $('h2').is(':empty')){            //Win at 300 or more points
-      $('h2').css("color", "black").text('Player 2 wins!')
+      $('h2').css("color", "#00ff00").text('Player 2 wins!')
           setTimeout(function(){
         window.location.reload(true);}, 2000)
     }
