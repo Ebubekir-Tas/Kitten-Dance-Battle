@@ -6,7 +6,7 @@
     <title>Document</title>
 
     <!--Bootstrap-->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
 
     <!--Fonts-->
     <link href="https://fonts.googleapis.com/css2?family=Do+Hyeon&family=Pacifico&display=swap" rel="stylesheet">
@@ -24,45 +24,89 @@
     <!--Title-->
     <section class=title>
     <h1>Project Dance Battle</h1>
+
+
+    <!--Navbar-->
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+        </button>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+          <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Game Settings
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <li class="dropdown-submenu"><a class="dropdown-item dropdown-toggle" href="#">Score Cap</a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item 100" href="#">100</a></li> <!--don't delete href="#" it affects cursor icon-->
+                      <li><a class="dropdown-item 200" href="#">200</a></li>
+                      <li><a class="dropdown-item 300" href="#">300</a></li>
+                      <li><a class="dropdown-item 500" href="#">500</a></li>
+                      <li><a class="dropdown-item 1000" href="#">1000</a></li>
+                    </ul>
+                  </li>
+                  <li class="dropdown-submenu"><a class="dropdown-item dropdown-toggle" href="#">Score Increment</a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item inc10" href="#">1-10</a></li>
+                      <li><a class="dropdown-item inc20" href="#">1-20</a></li>
+                      <li><a class="dropdown-item inc30" href="#">1-30</a></li>
+                      <li><a class="dropdown-item inc40" href="#">1-40</a></li>
+                      <li><a class="dropdown-item inc50" href="#">1-50</a></li>
+                    </ul>
+                  </li>  
+                    <li class="dropdown-submenu"><a class="dropdown-item dropdown-toggle" href="#">Refresh Timer</a>
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item ref1" href="#">1 Second</a></li>
+                        <li><a class="dropdown-item ref2" href="#">2 Seconds</a></li>
+                        <li><a class="dropdown-item ref3" href="#">3 Seconds</a></li>
+                        <li><a class="dropdown-item ref4" href="#">4 Seconds</a></li>
+                        <li><a class="dropdown-item ref5" href="#">5 Seconds</a></li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+        </div>
+      </nav>
     </section>
 
 
     <!--Winner Anouncement-->
-    <section></section>
         <div>
             <h2><!--Filled in by JavaScript--></h2>
         </div>
 
     <!--Instructions-->
     <section class="row instructions">
-    <div class="p1inst col-lg-6">Player 1: spam Z and X keys to dance</div>
+    <div class="p1inst col-sm-6">Player 1: spam Z and X keys to dance</div>
 
-    <div class="p2inst col-lg-6">Player 2: spam N and M keys to dance</div>
+    <div class="p2inst col-sm-6">Player 2: spam N and M keys to dance</div>
 
     </section>
     <!--Progress Bar-->
     <section class="row xp">
 
-        <div id="xpbar1" class="col-6">Player 1 Score: 0/300</div>
+        <div id="xpbar1" class="col-sm-6">Player 1 Score: 0/100</div>
 
-        <div id="xpbar2" class="col-6">Player 2 Score: 0/300</div>
+        <div id="xpbar2" class="col-sm-6">Player 2 Score: 0/100</div>
 
     </section>
   
 
     <!--Stick Figure Images 1-->
-    <section class="row sticks">   
+    <section class="col sticks">   
         
-        <img id="player1" class="col-6" src="images/stick2.png" alt="Image1"></img>
-        <img id="player2" class="col-6" src="images/playerdos1.png" alt="Image2"></img>  
+        <img id="player1" class="row col-6" src="images/stick2.png" alt="Image1"></img>
+        <img id="player2" class="row col-6" src="images/playerdos1.png" alt="Image2"></img>  
              
     </section>
 
     <!--Javascript and JQuery-->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-        <script src="index.js"></script>
-
-
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="index.js"></script>
 </section>
 </body>
 
