@@ -2,7 +2,7 @@
 .dropdown-submenu {
     position: relative;
   }
-  
+
 .dropdown-submenu .dropdown-menu {
     top: 0;
     left: 100%;
@@ -68,7 +68,6 @@ h2{
     word-spacing: 30px;
     letter-spacing: 2px;
 }
-
 
 .p1inst{
     color: #fff;

@@ -4,6 +4,7 @@ let p1Score = 0;    //Player 1 Score
 
 let p2Score = 0;  //Player 2 Score
 
+
 //Functions and Variables
 
 var scoreCap = 100;
@@ -25,12 +26,26 @@ function p1Wins(){$('h2').css("color", "#fff").text('Player 1 wins!')}     //Pla
 function p2Wins(){$('h2').css("color", "#fff").text('Player 2 wins!')}   //Player 2 Winner Declaraion
 
 
+//Audio
+
+var music = 'dance.mp3';
+var sound = false;
+function play() {
+    if(!sound){
+        sound = new Audio(music);
+    }
+    sound.play();
+}
+
+
+
 //Press the Z key                                                      
 document.addEventListener("keydown", function (e) {                   
   if (e.code == "KeyZ" && $("img#player1").attr("src") == "images/stick2.png"){    //If you press Z
     $("#player1").attr("src", "images/stick1.png");                  //The image swaps to stick1 (arms down)
-    randomScore1();                                                
-    console.log(p1Score);                                         
+    randomScore1();  
+    play();                                               
+    console.log(p1Score);                           
     $('#xpbar1').html('Player 1 Score: ' + p1Score  + '/' + scoreCap)    
     if (p1Score >= scoreCap && $('h2').is(':empty')){                
       p1Wins();                                                
@@ -47,7 +62,8 @@ document.addEventListener("keydown", function (e) {
 document.addEventListener("keydown", function (e) {
   if (e.code == "KeyX" && $("img#player1").attr("src") == "images/stick1.png"){    //If you press X
     $("#player1").attr("src", "images/stick2.png");                 //The image swaps to stick2 (arms up)
-    randomScore1();                                               
+    randomScore1();     
+    play();                                           
     console.log(p1Score);
     $('#xpbar1').html('Player 1 Score: ' + p1Score + '/' + scoreCap)    
     if (p1Score >= scoreCap && $('h2').is(':empty')){               
@@ -65,7 +81,8 @@ document.addEventListener("keydown", function (e) {
 document.addEventListener("keydown", function (f) {
   if (f.code == "KeyN" && $("img#player2").attr("src") == "images/playerdos1.png"){    //If you press N
     $("#player2").attr("src", "images/playerdos2.png");                 //The image swaps to player 2 (arms up)
-    randomScore2();                                               
+    randomScore2(); 
+    play();                                               
     console.log(p2Score);                                        
     $('#xpbar2').html('Player 2 Score: ' + p2Score + '/' + scoreCap)    
     if (p2Score >= scoreCap && $('h2').is(':empty')){               
@@ -87,7 +104,8 @@ document.addEventListener("keydown", function (f) {
     console.log(p2Score);
     $('#xpbar2').html('Player 2 Score: ' + p2Score + '/' + scoreCap)    
     if (p2Score >= scoreCap && $('h2').is(':empty')){               
-      p2Wins();                                               
+      p2Wins();
+      play();                                                
           setTimeout(function(){
         refresh()}, refreshTimer)                                   
         stop();                                            
@@ -97,7 +115,7 @@ document.addEventListener("keydown", function (f) {
 });
 
 
-// Bootstrap Dropdown
+// Bootstrap Game Settings
   $('.dropdown-menu a.dropdown-toggle').on('click', function(e) {
     if (!$(this).next().hasClass('show')) {
       $(this).parents('.dropdown-menu').first().find('.show').removeClass("show");
@@ -111,6 +129,7 @@ document.addEventListener("keydown", function (f) {
     });
     return false;
   });
+
 
 //Dropdown Score Cap
   $( ".100" ).click(function() {
