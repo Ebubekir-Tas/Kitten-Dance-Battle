@@ -1,40 +1,8 @@
-/*Bootstrap dropdown start*/
-.dropdown-submenu {
-    position: relative;
-  }
 
-.dropdown-submenu .dropdown-menu {
-    top: 0;
-    left: 100%;
-    margin-left: .1rem;
-    margin-right: .1rem;
-}
+/*Do not change - page positioning*/
+html { height: 100%; }
 
-.dropdown-submenu a::after {
-    transform: rotate(-90deg);
-    position: absolute;
-    right: 6px;
-    top: .8em;
-}
-
-li .dropdown-toggle:after {
-    transition: all 0.5s;
-}
-
-li.show > .dropdown-toggle:after {
-    transform: rotate(180deg);
-}
-
-li li.show > .dropdown-toggle:after {
-    transform: rotate(90deg);
-}
-/*Bootstrap dropdown end*/
-
-
-html { height: 100%; } /*Do not change */
-
-
-.centerVertical{    /*centers the entire website vertically - don't change*/
+.centerVertical{    
     margin: 0;
     position: absolute;
     top: 50%;
@@ -42,10 +10,11 @@ html { height: 100%; } /*Do not change */
     right: 0;
     transform: translateY(-50%);
 }
+/*Do not change - page positioning*/
 
 
 body{
-    background-image: linear-gradient(#00FF00, #fff);
+    background-image: linear-gradient(-45deg,#D9AFD9 0%, #97D9E1 100%);
     padding: 8px auto;
 }
 
@@ -53,7 +22,7 @@ body{
 h1{
     text-align: center;
     color: #fff;
-    font-family: Pacifico;
+    font-family: 'Pacifico';
     word-spacing: 30px;
     letter-spacing: 2px;
     font-size: 4rem;
@@ -63,7 +32,7 @@ h1{
 h2{
     text-align: center;
     color: #fff;
-    font-family: Pacifico;
+    font-family: 'Pacifico';
     font-size: 3rem;
     word-spacing: 30px;
     letter-spacing: 2px;
@@ -74,7 +43,7 @@ h2{
     font-size: 1.5rem;
     text-align: center;
     margin-top: 2%;
-    font-family: 'Do Hyeon';
+    font-family: 'Montserrat';
 }
 
 
@@ -83,7 +52,7 @@ h2{
     font-size: 1.5rem;
     text-align: center;
     margin-top: 2%;
-    font-family: 'Do Hyeon';
+    font-family: 'Montserrat';
 }
 
 
@@ -117,9 +86,9 @@ h2{
     background-color: #FFF; 
     font-size: 1.5rem;
     text-align: center;
-    font-family: 'Do Hyeon';
+    font-family: 'Montserrat';
     letter-spacing: 0px;
-    color: #00FF00; /*text*/
+    color: #97D9E1; /*text*/
     margin-bottom: 2%;
 }
 
@@ -127,9 +96,42 @@ h2{
 #xpbar2{                    /*Player 2 Score Bar*/
     font-size: 1.5rem;
     text-align: center;
-    font-family: 'Do Hyeon';
+    font-family: 'Montserrat';
     letter-spacing: 0px;
-    color: #00FF00; /*text*/
+    color: #D9AFD9; /*text*/
     margin-bottom: 2%;
     background-color: #fff;
 }
+
+
+/*Bootstrap dropdown start*/
+.dropdown-submenu {
+    position: relative;
+  }
+
+.dropdown-submenu .dropdown-menu {
+    top: 0;
+    left: 100%;
+    margin-left: .1rem;
+    margin-right: .1rem;
+}
+
+.dropdown-submenu a::after {
+    transform: rotate(-90deg);
+    position: absolute;
+    right: 6px;
+    top: .8em;
+}
+
+li .dropdown-toggle:after {
+    transition: all 0.5s;
+}
+
+li.show > .dropdown-toggle:after {
+    transform: rotate(180deg);
+}
+
+li li.show > .dropdown-toggle:after {
+    transform: rotate(90deg);
+}
+/*Bootstrap dropdown end*/
