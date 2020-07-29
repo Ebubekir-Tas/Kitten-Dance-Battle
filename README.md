@@ -6,15 +6,13 @@ This is a project made to demonstrate my knowledge and skills utilizing HTML, CS
 
 Game Instructions:
 
-Player 1: Alternate between pressing the Z and X keys on your keyboard to make your cat on the left dance. 
-
-
-Player 2: Alternate between pressing the N and M keys on your keyboard to make your cat on the right dance.
-
+**Player 1: Alternate between pressing the Z and X keys on your keyboard to make your cat on the left dance.**
 
 Z = Face Left.
 
 X = Face Right.
+
+**Player 2: Alternate between pressing the N and M keys on your keyboard to make your cat on the right dance.**
 
 N = Face Left.
 
