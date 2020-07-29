@@ -5,10 +5,6 @@ var p2Score = 0; //Player 2 Score
 
 //Functions and Variables
 
-var scoreCap = 100; //100 by default, can be changed in browser through Game Settings tab.
-
-var increment = 9; //9 by default, can be changed in browser through Game Settings tab.
-
 const refreshTimer = 3000; //3 seconds
 
 function end() {
@@ -166,6 +162,7 @@ $(".dropdown-menu a.dropdown-toggle").on("click", function (e) {
 //Dropdown Score Cap
 
 let pointsList = [100, 200, 300, 500, 1000];
+var scoreCap = 100;
 
 const dropdown = () => {
   pointsList.map((points) => {
@@ -181,19 +178,23 @@ const dropdown = () => {
 dropdown();
 
 
+ //Dropdown Score Increment
+ $('.inc10').click(function(){
+  increment = 9;
+})
 
-//Dropdown Score Increment
+$('.inc20').click(function(){
+  increment = 19;
+})
 
-let incrementList = [9, 19, 29, 39, 49];
+$('.inc30').click(function(){
+  increment = 29;
+})
 
-const newIncrements = () => {
-  incrementList.map((num) => {
-    const dropdownid = `.${"inc" + num}`;
-    $(newIncrements).click(() => {
-      increment = num;
-    });
-  });
-};
+$('.inc40').click(function(){
+  increment = 39;
+})
 
-newIncrements();
-
+$('.inc50').click(function(){
+  increment = 49;
+})
