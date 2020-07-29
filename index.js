@@ -159,7 +159,6 @@ $(".dropdown-menu a.dropdown-toggle").on("click", function (e) {
 });
 
 //Dropdown Score Cap
-
 let pointsList = [100, 200, 300, 500, 1000];
 let scoreCap = 100;
 
