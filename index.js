@@ -18,17 +18,17 @@ function refresh() {
 
 function randomScore1() {
   p1Score += Math.floor(Math.random() * increment) + 1;
-} //Player 1 random score generator (Must be different from Player 2)
+} //Player 1 random score generator
 function randomScore2() {
   p2Score += Math.floor(Math.random() * increment) + 1;
-} //Player 2 random score generator (Must be different from Player 1)
+} //Player 2 random score generator
 
 function p1Wins() {
   $("h2").css("color", "#fff").text("Player 1 wins!");
-} //Player 1 Winner Declaraion
+} //Player 1 Winner Declaration
 function p2Wins() {
   $("h2").css("color", "#fff").text("Player 2 wins!");
-} //Player 2 Winner Declaraion
+} //Player 2 Winner Declaration
 
 function p1Flash() {
   $("#player1");
