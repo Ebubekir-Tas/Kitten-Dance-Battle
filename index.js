@@ -1,9 +1,8 @@
-//Scores
+//Kitten Dance Battle
+
 var p1Score = 0; //Player 1 Score
 
 var p2Score = 0; //Player 2 Score
-
-//Functions and Variables
 
 const refreshTimer = 3000; //3 seconds
 
@@ -162,9 +161,9 @@ $(".dropdown-menu a.dropdown-toggle").on("click", function (e) {
 //Dropdown Score Cap
 
 let pointsList = [100, 200, 300, 500, 1000];
-var scoreCap = 100;
+let scoreCap = 100;
 
-const dropdown = () => {
+const totalPoints = () => {
   pointsList.map((points) => {
     const dropdownId = `.${points}`;
     $(dropdownId).click(() => {
@@ -175,7 +174,7 @@ const dropdown = () => {
   });
 };
 
-dropdown();
+totalPoints();
 
 //Dropdown Score Increment
 let incrementList = [9, 19, 29, 39, 49];
