@@ -1,6 +1,6 @@
 # Kitten-Dance-Battle
 
-Website: https://kittendancebattle.netlify.app/
+**Website: https://kittendancebattle.netlify.app/
 
 This is a project made to demonstrate my knowledge and skills utilizing HTML, CSS, JavaScript, Bootstrap, and jQuery. It is a fun little website where you make two cats dance against each other for points.
 
@@ -18,6 +18,6 @@ N = Face Left.
 
 M = Face Right.
 
-To toggle the Score Cap or Score Increment, click the Game Settings dropdown menu on the left side of the webpage.
+**To toggle the Score Cap or Score Increment, click the Game Settings dropdown menu on the left side of the webpage.
 
 🐱
