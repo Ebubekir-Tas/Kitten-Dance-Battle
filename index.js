@@ -179,6 +179,8 @@ dropdown();
 
 
  //Dropdown Score Increment
+var increment = 9
+
  $('.inc10').click(function(){
   increment = 9;
 })
