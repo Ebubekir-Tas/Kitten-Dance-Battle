@@ -177,26 +177,17 @@ const dropdown = () => {
 
 dropdown();
 
+//Dropdown Score Increment
+let incrementList = [9, 19, 29, 39, 49];
+let increment = 9;
 
- //Dropdown Score Increment
-var increment = 9
+const newIncrements = () => {
+  incrementList.map((num) => {
+    const incrementsId = `.${"inc" + num}`;
+    $(incrementsId).click(() => {
+      increment = num;
+    });
+  });
+};
 
- $('.inc10').click(function(){
-  increment = 9;
-})
-
-$('.inc20').click(function(){
-  increment = 19;
-})
-
-$('.inc30').click(function(){
-  increment = 29;
-})
-
-$('.inc40').click(function(){
-  increment = 39;
-})
-
-$('.inc50').click(function(){
-  increment = 49;
-})
+newIncrements();
