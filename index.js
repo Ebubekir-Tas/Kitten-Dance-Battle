@@ -7,7 +7,7 @@ let p2Score = 0;  //Player 2 Score
 
 //Functions and Variables
 
-var scoreCap = 100;
+var scoreCap = 100; //100 by default, can be changed in browser through Game Settings tab.
 
 var increment = 9; //9 by default, can be changed in browser through Game Settings tab.
 
@@ -41,8 +41,8 @@ function play() {
 
 
 //Press the Z key                                                      
-document.addEventListener("keydown", function (e) {                   
-  if (e.code == "KeyZ" && $("img#player1").attr("src") == "images/Cat2.png"){    //If you press Z
+document.addEventListener("keydown", function (z) {                   
+  if (z.code == "KeyZ" && $("img#player1").attr("src") == "images/Cat2.png"){    //If you press Z
     $("#player1").attr("src", "images/Cat1.png");                  //The image swaps to Cat1
     randomScore1();  
     play();                                               
@@ -60,11 +60,10 @@ document.addEventListener("keydown", function (e) {
 
 
 //Press the X key
-document.addEventListener("keydown", function (e) {
-  if (e.code == "KeyX" && $("img#player1").attr("src") == "images/Cat1.png"){    //If you press X
+document.addEventListener("keydown", function (x) {
+  if (x.code == "KeyX" && $("img#player1").attr("src") == "images/Cat1.png"){    //If you press X
     $("#player1").attr("src", "images/Cat2.png");                 //The image swaps to Cat2
-    randomScore1();     
-    play();                                           
+    randomScore1();                                            
     console.log(p1Score);
     $('#xpbar1').html('Player 1 Score: ' + p1Score + '/' + scoreCap)    
     if (p1Score >= scoreCap && $('h2').is(':empty')){               
@@ -79,11 +78,10 @@ document.addEventListener("keydown", function (e) {
 
 
 //Press the N key
-document.addEventListener("keydown", function (f) {
-  if (f.code == "KeyN" && $("img#player2").attr("src") == "images/SecondCat1.png"){    //If you press N
-    $("#player2").attr("src", "images/SecondCat2.png");                 //The image swaps to Second Cat 2
-    randomScore2(); 
-    play();                                               
+document.addEventListener("keydown", function (n) {
+  if (n.code == "KeyN" && $("img#player2").attr("src") == "images/SecondCat2.png"){    //If you press N
+    $("#player2").attr("src", "images/SecondCat1.png");                 //The image swaps to Second Cat 2
+    randomScore2();                                              
     console.log(p2Score);                                        
     $('#xpbar2').html('Player 2 Score: ' + p2Score + '/' + scoreCap)    
     if (p2Score >= scoreCap && $('h2').is(':empty')){               
@@ -98,15 +96,15 @@ document.addEventListener("keydown", function (f) {
 
 
 //Press the M key
-document.addEventListener("keydown", function (f) {
-  if (f.code == "KeyM" && $("img#player2").attr("src") == "images/SecondCat2.png"){    //If you press M
-    $("#player2").attr("src", "images/SecondCat1.png");                 //The image swaps to Second Cat 2
-    randomScore2();                                               
+document.addEventListener("keydown", function (m) {
+  if (m.code == "KeyM" && $("img#player2").attr("src") == "images/SecondCat1.png"){    //If you press M
+    $("#player2").attr("src", "images/SecondCat2.png");                 //The image swaps to Second Cat 2
+    randomScore2();  
+    play();                                             
     console.log(p2Score);
     $('#xpbar2').html('Player 2 Score: ' + p2Score + '/' + scoreCap)    
     if (p2Score >= scoreCap && $('h2').is(':empty')){               
-      p2Wins();
-      play();                                                
+      p2Wins();                                                
           setTimeout(function(){
         refresh()}, refreshTimer)                                   
         stop();                                            
