@@ -20,6 +20,6 @@ N = Face Left.
 
 M = Face Right.
 
-**To toggle the Score Cap or Score Increment, click the Game Settings dropdown menu on the left side of the webpage.
+**To toggle the Score Cap or Score Increment, click the Game Settings dropdown menu on the left side of the webpage.**
 
 🐱
