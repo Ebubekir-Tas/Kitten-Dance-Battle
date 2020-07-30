@@ -10,7 +10,7 @@ function end() {
   if ($("h2").not(":empty")) {
     $("body").on("keydown", false);
   }
-} //Winner announcement = Disable keyboard inputs)
+} //Winner announcement / Disable keyboard inputs
 
 function refresh() {
   window.location.reload(true);
