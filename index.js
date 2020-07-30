@@ -1,8 +1,8 @@
 //Kitten Dance Battle
 
-var p1Score = 0; //Player 1 Score
+var p1Score = 0; 
 
-var p2Score = 0; //Player 2 Score
+var p2Score = 0;
 
 const refreshTimer = 3000; //3 seconds
 
