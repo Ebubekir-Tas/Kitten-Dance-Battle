@@ -14,7 +14,7 @@ function end() {
 
 function refresh() {
   window.location.reload(true);
-} //refresh
+} 
 
 function randomScore1() {
   p1Score += Math.floor(Math.random() * increment) + 1;
