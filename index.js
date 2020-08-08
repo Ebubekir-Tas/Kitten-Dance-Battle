@@ -1,8 +1,8 @@
 //Kitten Dance Battle
 
-var p1Score = 0; //Player 1 Score
+let p1Score = 0; //Player 1 Score
 
-var p2Score = 0; //Player 2 Score
+let p2Score = 0; //Player 2 Score
 
 const refreshTimer = 3000; //3 seconds
 
@@ -18,10 +18,10 @@ function refresh() {
 
 function randomScore1() {
   p1Score += Math.floor(Math.random() * increment) + 1;
-} //Player 1 random score generator (Must be different from Player 2)
+} //Player 1 random score generator
 function randomScore2() {
   p2Score += Math.floor(Math.random() * increment) + 1;
-} //Player 2 random score generator (Must be different from Player 1)
+} //Player 2 random score generator
 
 function p1Wins() {
   $("h2").css("color", "#fff").text("Player 1 wins!");
@@ -51,8 +51,8 @@ function p2Flash() {
 }
 
 //Audio
-var music = "dance.mp3";
-var sound = false;
+const music = "dance.mp3";
+let sound = false;
 function play() {
   if (!sound) {
     //sound only plays if there isn't sound already
@@ -146,7 +146,7 @@ $(".dropdown-menu a.dropdown-toggle").on("click", function (e) {
   if (!$(this).next().hasClass("show")) {
     $(this).parents(".dropdown-menu").first().find(".show").removeClass("show");
   }
-  var $subMenu = $(this).next(".dropdown-menu");
+  const $subMenu = $(this).next(".dropdown-menu");
   $subMenu.toggleClass("show");
   $(this).parent().toggleClass("show");
   $(this)
@@ -159,8 +159,7 @@ $(".dropdown-menu a.dropdown-toggle").on("click", function (e) {
 });
 
 //Dropdown Score Cap
-
-let pointsList = [100, 200, 300, 500, 1000];
+const pointsList = [100, 200, 300, 500, 1000];
 let scoreCap = 100;
 
 const totalPoints = () => {
