@@ -1,8 +1,14 @@
 //Kitten Dance Battle
 
+<<<<<<< HEAD
 let p1Score = 0; //Player 1 Score
 
 let p2Score = 0; //Player 2 Score
+=======
+var p1Score = 0; 
+
+var p2Score = 0;
+>>>>>>> d0ecedced91569238bcc02915d3000a381e246e1
 
 const refreshTimer = 3000; //3 seconds
 
@@ -10,11 +16,11 @@ function end() {
   if ($("h2").not(":empty")) {
     $("body").on("keydown", false);
   }
-} //Winner announcement = Disable keyboard inputs)
+} //Winner announcement / Disable keyboard inputs
 
 function refresh() {
   window.location.reload(true);
-} //refresh
+} 
 
 function randomScore1() {
   p1Score += Math.floor(Math.random() * increment) + 1;
@@ -25,10 +31,10 @@ function randomScore2() {
 
 function p1Wins() {
   $("h2").css("color", "#fff").text("Player 1 wins!");
-} //Player 1 Winner Declaraion
+} //Player 1 Winner Declaration
 function p2Wins() {
   $("h2").css("color", "#fff").text("Player 2 wins!");
-} //Player 2 Winner Declaraion
+} //Player 2 Winner Declaration
 
 function p1Flash() {
   $("#player1");
@@ -159,7 +165,11 @@ $(".dropdown-menu a.dropdown-toggle").on("click", function (e) {
 });
 
 //Dropdown Score Cap
+<<<<<<< HEAD
 const pointsList = [100, 200, 300, 500, 1000];
+=======
+let pointsList = [100, 200, 300, 500, 1000];
+>>>>>>> d0ecedced91569238bcc02915d3000a381e246e1
 let scoreCap = 100;
 
 const totalPoints = () => {
