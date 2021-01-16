@@ -1,6 +1,6 @@
-/*Do not change - page positioning*/
 html {
   height: 100%;
+  overflow-x: hidden;
 }
 
 .centerVertical {
