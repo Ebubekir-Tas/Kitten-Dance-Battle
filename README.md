@@ -19,3 +19,5 @@ N = Face Left.
 M = Face Right.
 
 **To toggle the Score Cap or Score Increment, click the Game Settings dropdown menu on the left side of the webpage.**
+
+![kittendancebattle](https://user-images.githubusercontent.com/65694925/104794994-3c582100-5779-11eb-9fd6-1d7c375dfb84.gif)
