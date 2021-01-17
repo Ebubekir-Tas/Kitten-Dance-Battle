@@ -6,31 +6,32 @@ let p2Score = 0; //Player 2 Score
 
 const refreshTimer = 3000; //3 seconds
 
-function end() {
+end = () => {
   if ($("h2").not(":empty")) {
     $("body").on("keydown", false);
   }
 } //Winner announcement = Disable keyboard inputs)
 
-function refresh() {
+refresh = () => {
   window.location.reload(true);
 } //refresh
 
-function randomScore1() {
+randomScore1 = () => {
   p1Score += Math.floor(Math.random() * increment) + 1;
 } //Player 1 random score generator
 function randomScore2() {
   p2Score += Math.floor(Math.random() * increment) + 1;
 } //Player 2 random score generator
 
-function p1Wins() {
+p1Wins = () => {
   $("h2").css("color", "#fff").text("Player 1 wins!");
-} //Player 1 Winner Declaraion
-function p2Wins() {
-  $("h2").css("color", "#fff").text("Player 2 wins!");
-} //Player 2 Winner Declaraion
+} //Player 1 Winner Declaration
 
-function p1Flash() {
+p2Wins = () => {
+  $("h2").css("color", "#fff").text("Player 2 wins!");
+} //Player 2 Winner Declaration
+
+p1Flash = () => {
   $("#player1");
   for (let i = 1; i <= 4; i++) {
     function flash() {
@@ -40,7 +41,7 @@ function p1Flash() {
   }
 }
 
-function p2Flash() {
+p2Flash = () => {
   $("#player2");
   for (let i = 1; i <= 4; i++) {
     function flash() {
@@ -53,7 +54,7 @@ function p2Flash() {
 //Audio
 const music = "dance.mp3";
 let sound = false;
-function play() {
+play = () => {
   if (!sound) {
     //sound only plays if there isn't sound already
     sound = new Audio(music);
